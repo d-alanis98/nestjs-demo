@@ -2,10 +2,8 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm'; 
 //Configuration
 import databaseConfiguration from 'config/database';
-//Entities
-import { User } from './application/user/User';
 //Modules
-import { UserModule } from './application/user/UserModule';
+import { UserModule } from './application/users/UserModule';
 
 
 @Module({

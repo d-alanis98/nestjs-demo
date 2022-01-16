@@ -15,12 +15,6 @@ export class User {
     @Column()
     email: string;
 
-    toPrimitives = (): UserPrimitives => ({
-        name: this.name,
-        email: this.email,
-        uri_user: this.uri_user,
-        lastname: this.lastname
-    });
 }
 
 

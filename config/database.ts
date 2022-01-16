@@ -1,8 +1,8 @@
-import { TypeOrmModuleOptions } from "@nestjs/typeorm";
-import { config } from "dotenv";
+import { TypeOrmModuleOptions } from '@nestjs/typeorm';
+//Class to load the environment variables
+import EnvironmentLoader from '../src/infrastructure/environment/EnvironmentLoader';
 
-
-config()
+new EnvironmentLoader().load();
 /**
  * Database configuration.
  */

@@ -7,6 +7,7 @@ declare global {
         DB_USERNAME: string,
         DB_PASSWORD: string
         DB_CONNECTION: 'mysql' | 'mariadb' | 'postgres' | 'mongodb',
+        [key: string]: string,
       }
     }
   }
